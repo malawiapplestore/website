@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Store Malawi - Premium Apple Products in Malawi</title>
+    <meta name="description" content="Malawi's premier destination for genuine Apple products. iPhones, Apple Watches, AirPods, MacBooks and more.">
+    <meta name="keywords" content="Apple Store Malawi, iPhone, Apple Watch, AirPods, MacBook, Apple products Malawi">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Feather Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+    <!-- Bootstrap CSS (for grid system) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0b4fd8',
+                        secondary: '#18b76a',
+                        dark: '#0b1220',
+                        light: '#f5f9ff'
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+<!-- Scroll Indicator -->
+<div class="scroll-indicator"></div>
+
+<!-- Scroll to Top Button -->
+<button id="scrollToTop" aria-label="Scroll to top">
+    <i data-feather="arrow-up"></i>
+</button>
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/265999999999" class="floating-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+    <i data-feather="message-circle"></i>
+</a>
+
+<!-- Navigation -->
+<nav>
+    <div class="nav-container">
+        <a href="index.html" class="logo-container">
+            <span class="text-xl font-bold text-gradient">Apple Store Malawi</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+        <button id="menuToggle" class="md:hidden p-2" aria-label="Toggle menu" aria-expanded="false">
+            <i data-feather="menu" class="w-6 h-6"></i>
+        </button>
+    </div>
+</nav>
+
+<!-- Main Content -->
+<main>
+<!-- Hero Section -->
+<section class="hero-section">
+    <div id="particles-js"></div>
+    <div class="hero-content">
+        <div class="hero-badge" style="background: linear-gradient(135deg, var(--primary), var(--secondary)); padding: 0.75rem 1.5rem; border-radius: 50px; font-size: 0.875rem; font-weight: 600; color: white; display: inline-block; margin-bottom: 1.5rem; box-shadow: 0 4px 20px rgba(11, 79, 216, 0.4);">
+            <span>🚀 Premium Apple Products</span>
+        </div>
+        <h1 class="hero-title" style="font-size: clamp(3rem, 8vw, 6rem); font-weight: 900; line-height: 1.1; margin-bottom: 1.5rem; background: linear-gradient(135deg, var(--text-primary), var(--primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+            Apple Store Malawi
+        </h1>
+        <p class="hero-subtitle" style="font-size: clamp(1.125rem, 2.5vw, 1.5rem); color: var(--text-secondary); margin-bottom: 2rem; max-width: 600px; line-height: 1.6;">
+            Your trusted destination for genuine Apple products in Malawi
+        </p>
+        <div class="typing-text" style="font-size: clamp(1rem, 2vw, 1.25rem); color: var(--primary); margin-bottom: 2.5rem; min-height: 1.5rem;">
+            <span id="typing-text"></span>
+            <span class="cursor">|</span>
+        </div>
+        <div class="hero-buttons" style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+            <a href="products.html" class="btn-gradient" style="padding: 1rem 2.5rem; border-radius: 12px; font-size: 1.125rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">Shop Now</a>
+            <a href="https://wa.me/265999999999" target="_blank" class="btn-outline" style="padding: 1rem 2rem; border-radius: 12px; font-size: 1rem; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; border: 2px solid var(--primary); color: var(--text-primary);">
+                <i data-feather="message-circle" style="width: 20px; height: 20px;"></i> WhatsApp
+            </a>
+            <a href="mailto:info@applestoremalawi.com" class="btn-outline" style="padding: 1rem 2rem; border-radius: 12px; font-size: 1rem; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; border: 2px solid var(--primary); color: var(--text-primary);">
+                <i data-feather="mail" style="width: 20px; height: 20px;"></i> Email
+            </a>
+        </div>
+        <div class="scroll-down" style="position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%); animation: bounce 2s infinite;">
+            <i data-feather="chevron-down" style="width: 32px; height: 32px; color: var(--text-muted);"></i>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Products Section -->
+<section>
+    <div class="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
+        <div class="text-center mb-12">
+            <h2 style="font-size: clamp(2.5rem, 5vw, 4.5rem); font-weight: 800; margin-bottom: 1rem;">
+                <span style="background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Featured Products</span>
+            </h2>
+            <p style="color: var(--text-secondary); font-size: 1.125rem;">Discover our most popular Apple products</p>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+            <div class="glass-card product-card" style="padding: 0; overflow: hidden;">
+                <div class="product-badge" style="position: absolute; top: 1rem; right: 1rem; background: var(--gradient-primary); color: white; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; z-index: 10;">Featured</div>
+                <div class="product-image" style="width: 100%; height: 220px; overflow: hidden;">
+                    <img src="img/iPhone.jpg" alt="iPhone" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="product-info" style="padding: 1.5rem;">
+                    <h3 style="font-size: 1.125rem; font-weight: 700; margin-bottom: 0.5rem;">iPhone 15 Pro Max</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.875rem; margin-bottom: 0.75rem; line-height: 1.4;">Latest iPhone with titanium design</p>
+                    <div class="product-price" style="font-size: 1.25rem; font-weight: 700; color: var(--primary); margin-bottom: 1rem;">MK 1,200,000</div>
+                    <a href="products.html" class="btn-gradient" style="display: block; text-align: center; padding: 0.75rem 1.5rem; border-radius: 10px; font-size: 0.875rem; font-weight: 600; text-decoration: none;">View Details</a>
+                </div>
+            </div>
+            <div class="glass-card product-card" style="padding: 0; overflow: hidden;">
+                <div class="product-badge new" style="position: absolute; top: 1rem; right: 1rem; background: var(--gradient-secondary); color: white; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; z-index: 10;">New</div>
+                <div class="product-image" style="width: 100%; height: 220px; overflow: hidden;">
+                    <img src="img/Watches.png" alt="Apple Watch" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="product-info" style="padding: 1.5rem;">
+                    <h3 style="font-size: 1.125rem; font-weight: 700; margin-bottom: 0.5rem;">Apple Watch Series 9</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.875rem; margin-bottom: 0.75rem; line-height: 1.4;">Advanced health and fitness features</p>
+                    <div class="product-price" style="font-size: 1.25rem; font-weight: 700; color: var(--primary); margin-bottom: 1rem;">MK 450,000</div>
+                    <a href="products.html" class="btn-gradient" style="display: block; text-align: center; padding: 0.75rem 1.5rem; border-radius: 10px; font-size: 0.875rem; font-weight: 600; text-decoration: none;">View Details</a>
+                </div>
+            </div>
+            <div class="glass-card product-card" style="padding: 0; overflow: hidden;">
+                <div class="product-badge bestseller" style="position: absolute; top: 1rem; right: 1rem; background: var(--gradient-accent); color: white; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; z-index: 10;">Best Seller</div>
+                <div class="product-image" style="width: 100%; height: 220px; overflow: hidden;">
+                    <img src="img/airpods.jpg" alt="AirPods" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="product-info" style="padding: 1.5rem;">
+                    <h3 style="font-size: 1.125rem; font-weight: 700; margin-bottom: 0.5rem;">AirPods Pro 2nd Gen</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.875rem; margin-bottom: 0.75rem; line-height: 1.4;">Immersive sound with active noise cancellation</p>
+                    <div class="product-price" style="font-size: 1.25rem; font-weight: 700; color: var(--primary); margin-bottom: 1rem;">MK 180,000</div>
+                    <a href="products.html" class="btn-gradient" style="display: block; text-align: center; padding: 0.75rem 1.5rem; border-radius: 10px; font-size: 0.875rem; font-weight: 600; text-decoration: none;">View Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Location Section -->
+<section>
+    <div class="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
+        <div class="text-center mb-12">
+            <h2 style="font-size: clamp(2.5rem, 5vw, 4.5rem); font-weight: 800; margin-bottom: 1rem;">
+                <span style="background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Visit Our Store</span>
+            </h2>
+            <p style="color: var(--text-secondary); font-size: 1.125rem;">Come visit us at our location</p>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+            <div class="glass-card" style="padding: 2rem;">
+                <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem;">Store Information</h3>
+                <div style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.25rem;">
+                    <i data-feather="map-pin" style="color: var(--primary); width: 24px; height: 24px; margin-top: 2px; flex-shrink: 0;"></i>
+                    <div>
+                        <h6 style="font-weight: 600; color: var(--text-primary); margin-bottom: 0.25rem;">Address</h6>
+                        <p style="color: var(--text-secondary); margin: 0;">Lilongwe, Malawi</p>
+                    </div>
+                </div>
+                <div style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.25rem;">
+                    <i data-feather="phone" style="color: var(--primary); width: 24px; height: 24px; margin-top: 2px; flex-shrink: 0;"></i>
+                    <div>
+                        <h6 style="font-weight: 600; color: var(--text-primary); margin-bottom: 0.25rem;">Phone</h6>
+                        <p style="color: var(--text-secondary); margin: 0;">+265 999 999 999</p>
+                    </div>
+                </div>
+                <div style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.25rem;">
+                    <i data-feather="mail" style="color: var(--primary); width: 24px; height: 24px; margin-top: 2px; flex-shrink: 0;"></i>
+                    <div>
+                        <h6 style="font-weight: 600; color: var(--text-primary); margin-bottom: 0.25rem;">Email</h6>
+                        <p style="color: var(--text-secondary); margin: 0;">info@applestoremalawi.com</p>
+                    </div>
+                </div>
+                <div style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.25rem;">
+                    <i data-feather="clock" style="color: var(--primary); width: 24px; height: 24px; margin-top: 2px; flex-shrink: 0;"></i>
+                    <div>
+                        <h6 style="font-weight: 600; color: var(--text-primary); margin-bottom: 0.25rem;">Business Hours</h6>
+                        <p style="color: var(--text-secondary); margin: 0;">Mon-Sat: 9AM - 6PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="glass-card" style="padding: 0; overflow: hidden;">
+                <div class="map-container" style="height: 400px;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15355.666566044487!2d35.04714223056803!3d-15.80834881105941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smw!4v1781133128599!5m2!1sen!2smw" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <div class="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
+        <div class="text-center mb-12">
+            <h2 style="font-size: clamp(2.5rem, 5vw, 4.5rem); font-weight: 800; margin-bottom: 1rem;">
+                <span style="background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Contact Us</span>
+            </h2>
+            <p style="color: var(--text-secondary); font-size: 1.125rem;">Get in touch with us for any inquiries or support</p>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+            <div class="glass-card" style="padding: 2rem;">
+                <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem;">Contact Information</h3>
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                    <div style="width: 48px; height: 48px; background: var(--gradient-primary); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                        <i data-feather="phone" style="width: 24px; height: 24px; color: white;"></i>
+                    </div>
+                    <div>
+                        <h6 style="margin: 0; font-weight: 600;">Phone</h6>
+                        <p style="color: var(--text-secondary); margin: 0;">+265 999 999 999</p>
+                    </div>
+                </div>
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                    <div style="width: 48px; height: 48px; background: #25D366; border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                        <i data-feather="message-circle" style="width: 24px; height: 24px; color: white;"></i>
+                    </div>
+                    <div>
+                        <h6 style="margin: 0; font-weight: 600;">WhatsApp</h6>
+                        <p style="color: var(--text-secondary); margin: 0;">+265 999 999 999</p>
+                    </div>
+                </div>
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                    <div style="width: 48px; height: 48px; background: var(--gradient-secondary); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                        <i data-feather="mail" style="width: 24px; height: 24px; color: white;"></i>
+                    </div>
+                    <div>
+                        <h6 style="margin: 0; font-weight: 600;">Email</h6>
+                        <p style="color: var(--text-secondary); margin: 0;">info@applestoremalawi.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="glass-card" style="padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem;">Contact Us Directly</h3>
+                <a href="https://wa.me/265999999999" target="_blank" class="btn-gradient" style="display: flex; align-items: center; justify-content: center; gap: 0.75rem; padding: 1rem 2rem; border-radius: 12px; border: none; cursor: pointer; font-weight: 600; text-decoration: none; background: #25D366; color: white;">
+                    <i data-feather="message-circle" style="width: 24px; height: 24px;"></i>
+                    Chat on WhatsApp
+                </a>
+                <a href="mailto:info@applestoremalawi.com" class="btn-gradient" style="display: flex; align-items: center; justify-content: center; gap: 0.75rem; padding: 1rem 2rem; border-radius: 12px; border: none; cursor: pointer; font-weight: 600; text-decoration: none;">
+                    <i data-feather="mail" style="width: 24px; height: 24px;"></i>
+                    Send Email
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer>
+    <div class="max-w-7xl mx-auto px-4 md:px-8 lg:px-16 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="text-center md:text-left">
+                <h3 style="margin-bottom: 1rem;">Apple Store Malawi</h3>
+                <p style="color: var(--text-secondary); line-height: 1.6;">Premium Apple Products in Malawi</p>
+            </div>
+            <div class="text-center md:text-left">
+                <h3 style="margin-bottom: 1rem;">Quick Links</h3>
+                <ul class="list-unstyled" style="line-height: 2;">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="text-center md:text-left">
+                <h3 style="margin-bottom: 1rem;">Categories</h3>
+                <ul class="list-unstyled" style="line-height: 2;">
+                    <li><a href="products.html">iPhones</a></li>
+                    <li><a href="products.html">Apple Watches</a></li>
+                    <li><a href="products.html">AirPods</a></li>
+                    <li><a href="products.html">MacBooks</a></li>
+                </ul>
+            </div>
+            <div class="text-center md:text-left">
+                <h3 style="margin-bottom: 1rem;">Contact Us</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 0.75rem; line-height: 1.6;">
+                    <i data-feather="phone" style="width: 16px; height: 16px; margin-right: 0.5rem; vertical-align: middle;"></i>
+                    +265 999 999 999
+                </p>
+                <p style="color: var(--text-secondary); margin-bottom: 1.5rem; line-height: 1.6;">
+                    <i data-feather="mail" style="width: 16px; height: 16px; margin-right: 0.5rem; vertical-align: middle;"></i>
+                    info@applestoremalawi.com
+                </p>
+            </div>
+        </div>
+        <hr style="border-color: var(--glass-border); margin: 2rem 0;">
+        <div class="text-center">
+            <small style="color: var(--text-muted);">&copy; 2024 Apple Store Malawi. All rights reserved.</small>
+        </div>
+    </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/animations.js"></script>
+</body>
+</html>
